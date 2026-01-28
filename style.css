@@ -1,0 +1,89 @@
+body {
+    background-color: #121212;
+    color: #FFE81F; /* Amarelo Star Wars */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+/* Formulário */
+.form-section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 232, 31, 0.2);
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input, select {
+    flex: 1;
+    padding: 12px;
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #FFE81F;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d4c015;
+    transform: scale(1.05);
+}
+
+/* Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #555;
+}
+
+.card h3 { margin-top: 0; color: #fff; }
+.card p { color: #ccc; margin: 5px 0; }
+
+/* Cores dinâmicas para o lado da força */
+.border-luz { border-left-color: #2E67F8 !important; }    /* Azul */
+.border-sombrio { border-left-color: #EB212E !important; } /* Vermelho */
+.border-cinza { border-left-color: #aaa !important; }      /* Cinza */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Galáctico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Star Wars Registry</h1>
+            <p>Cadastre seus aliados e inimigos</p>
+        </header>
+
+        <section class="form-section">
+            <form id="starForm">
+                <input type="text" id="nome" placeholder="Nome do Personagem" required>
+                
+                <select id="lado" required>
+                    <option value="" disabled selected>Escolha o Lado da Força</option>
+                    <option value="Luz">Lado da Luz</option>
+                    <option value="Cinza">Jedi Cinza / Neutro</option>
+                    <option value="Sombrio">Lado Sombrio</option>
+                </select>
+
+                <input type="text" id="ocupacao" placeholder="Ocupação (Ex: Jedi, Sith, Piloto)" required>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Personagens Registrados</h2>
+            <div id="cards-container" class="cards-grid">
+                </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
